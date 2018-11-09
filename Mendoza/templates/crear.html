@@ -1,0 +1,12 @@
+Crear Estudiantes
+{% block contenido %}
+
+{{mensaje}}<br>
+
+<form method="POST">
+    {{f.as_p}}<br>
+     {% csrf_token %}
+    <input type="submit" value="Guardar">
+</form>
+
+{% endblock %}
